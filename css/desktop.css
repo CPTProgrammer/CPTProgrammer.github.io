@@ -1,0 +1,19 @@
+#DesktopIcon {
+	width: 1280px;
+	height: 680px;
+	margin-top: 5px;
+}
+#DesktopIcon * {
+	/*border: 1px solid red;*/
+	outline: 1px solid red;
+	box-sizing: border-box;
+}
+.DestopIconRow {
+	width: 100%;
+	height: 78px;
+}
+.DestopIconCol {
+	width: 78px;
+	height: 53px;
+	display: inline-block;
+}

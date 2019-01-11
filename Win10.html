@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Windows10 CloudDesktop</title>
+		<link rel="stylesheet" href="css/structure.css" />
+		<link rel="stylesheet" href="css/rightClick.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/window.css" />
+		<link rel="stylesheet" href="css/sellectBox.css" />
+		<link rel="stylesheet" href="css/desktop.css" />
+	</head>
+	<body>
+		<div id="jsCode"> </div>
+		<div id="main">
+			<div id="backgroundImg"> 
+				<table id="DesktopIcon"> </table>
+			</div>
+			<div id="SellectBox"> </div>
+			<div id="CheatingWindow" class="window" style="display: none; width: 258px; height: 161px;">
+				<div>
+					<div class="windowL"> </div>
+					<div class="windowR"> </div>
+					<div class="windowB"> 
+						<div class="windowBL"> </div>
+						<div class="windowBR"> </div>
+					</div>
+					<div class="windowT"> 
+						<div class="windowTL"> </div>
+						<div class="windowTR"> </div>
+					</div>
+				</div>
+				<div class="windowMain">
+					<div class="windowHead">
+						<div class="windowIcon" style="background-image: url('image/icon/exe.png');"> </div>
+						<div class="windowTittle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 作弊神器。。。</div>
+						<div class="windowHeadButtonGroup">
+							<div class="windowClose windowHeadButtons">
+								<div class="windowHeadButtonsText" align="center">×</div>
+							</div>
+						</div>
+					</div>
+					<div class="windowBody" style="-webkit-user-select: none;">
+						<style>
+							input[type="color"]{
+								background: none;
+								border: none;
+							}
+							input,select {
+								outline: none;
+							}
+							select {
+								appearance: none;
+								background-color: #222222;
+								color: white;
+							}
+						</style>
+						选择框颜色：<input type="color" value="#3399FF" id="CheatingSellectBox" /><br />
+						选择栏样式：<select id="CheatingSellectBoxBorder">
+							<option>实线边框（有背景）</option>
+							<option>虚线边框（无背景）</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="RightClick" style="display: none; z-index: 100000000000" id="DesktopRightClick">
+				<div class="RightClickElement RightClickMenu">查看(V)	</div>
+				<div class="RightClickElement RightClickMenu">排序方式(O)</div>
+				<div class="RightClickElement">刷新(E)</div>
+				<hr class="RightClickHr" />
+				<div class="RightClickElement RightClickInvalidElement">粘贴(P)</div>
+				<div class="RightClickElement RightClickInvalidElement">粘贴快捷方式(S)</div>
+				<div class="RightClickElement">撤销 重命名(U)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Ctrl+Z</div>
+				<hr class="RightClickHr" />
+				<div class="RightClickElement">英特尔® 显卡设置</div>
+				<hr class="RightClickHr" />
+				<div class="RightClickElement RightClickMenu">新建(W)</div>
+				<hr class="RightClickHr" />
+				<div class="RightClickElement">显示设置(D)</div>
+				<div class="RightClickElement">个性化(R)</div>
+			</div>
+			<div id="footer">
+				<div id="footer-l"> 
+					<div id="Windows"> </div>
+					<div id="CortanaSearch"> 
+						<input type="text" id="CortanaSearchText" placeholder="在这里输入你要搜索的内容" />
+						<div id="CortanaSearchVoice"> </div>
+					</div> 
+					<div id="DisplayWindow" title="任务视图"> </div>
+				</div>
+				<div id="footer-r"> 
+					<div id="InputType" title="中/英文"> </div>
+					<div id="InputMethod"> </div>
+					<div id="Time" title="0000年0月0日&#10;星期一">
+						<div id="TimeDay" align="center">00:00</div>
+						<div id="TimeYear" align="center">0000/00/00</div>
+					</div>
+					<div id="Chat" title="没有新通知"> </div>
+					<div id="DisplayDesktop"> </div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/base.js"> </script>
+		<script type="text/javascript" src="js/tools.js"> </script>
+		<script type="text/javascript" src="js/Assembly/keyDown.js"> </script>
+		<script type="text/javascript" src="js/Assembly/rightClick.js"> </script>
+		<script type="text/javascript" src="js/Assembly/sellectBox.js"> </script>
+		<script type="text/javascript" src="js/Assembly/time.js"> </script>
+		<script type="text/javascript" src="js/Assembly/window.js"> </script>
+		<script type="text/javascript" src="js/Assembly/desktop.js"> </script>
+		<script type="text/javascript" src="js/Window/cheating.js"> </script>
+		<script type="text/javascript" src="js/call.js"> </script>
+	</body>
+</html>

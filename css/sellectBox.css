@@ -1,0 +1,14 @@
+/*****************************桌面选择栏↓**********************************/
+#SellectBox {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	box-sizing: border-box;
+	border: 1px solid rgb(51,153,255);
+	background-color: rgba(51,153,255,0.2);
+	display: none;
+	z-index: 100000;
+}
+/*****************************桌面选择栏↑**********************************/

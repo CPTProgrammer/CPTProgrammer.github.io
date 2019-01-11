@@ -1,0 +1,150 @@
+#Windows {
+	background-image: url("../image/Win10Windows1.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 100%;
+	display: inline-block;
+	padding: 0px;
+}
+#Windows:hover {
+	background-image: url("../image/Win10Windows2.png");
+}
+#CortanaSearch{
+	height: 100%;
+	width: 344px;
+	display: inline-block;
+	background-color: rgba(51,51,51,0.8);
+}
+#CortanaSearchText {
+	height: 100%;
+	width: 270.16px;
+	border-radius: 0px;
+	display: inline-block;
+	background-color: rgba(51,51,51,0.8);
+	border: none;
+	outline: medium;
+	padding-left: 33.84px;
+	font-size: 14.7px;
+	font-family: "微软雅黑";
+	background-image: url("../image/CortanaSearchIcon.png");
+	background-size: 23px 23px;
+	background-position-x: 8px;
+	background-position-y: 9px;
+	position: relative;
+	top: -16px;
+}
+#CortanaSearchText:hover{
+	background-color: rgba(76,76,76,0.8);
+}
+#CortanaSearchVoice {
+	background-image: url("../image/CortanaSearchVoice.png");
+	background-size: 30% 40%;
+	background-position: 50% 50%;
+	height: 100%;
+	width: 40px;
+	background-color: rgba(51,51,51,0.8);
+	box-sizing: border-box;
+	display: inline-block;
+}
+#CortanaSearchVoice:hover {
+	background-color: rgba(46,60,72,0.8);
+	border: 1px solid rgba(41,69,92,0.8);
+}
+#DisplayDesktop {
+	height: 100%;
+	width: 4.17px;
+	border-left: 1.5px solid rgba(102,105,107,0.8);
+	/*background-color: rgba(0,4,9,0.8);*/
+	display: inline-block;
+}
+#DisplayDesktop:hover {
+	background-color: rgba(29,25,33,0.8);
+}
+#Chat {
+	height: 100%;
+	width: 40px;
+	background-image: url("../image/ChatIcon.png");
+	background-size: 40% 40%;
+	background-position: 50% 50%;
+	/*background-color: rgba(0,4,9,0.8);*/
+	margin-right: 8px;
+	display: inline-block;
+}
+#Chat:hover {
+	background-color: rgba(25,29,33,0.8);
+}
+#Time {
+	height: 100%;
+	width: 76.75px;
+	/*background-color: rgba(0,4,9,0.8);*/
+	font-size: 13px;
+	font-family: Microsoft Yahei UI;
+	color: white;
+	cursor: hand;
+	display: inline-block;
+	position: relative;
+	top: -7px;
+}
+#Time:hover {
+	background-color: rgba(25,29,33,0.8);
+}
+#TimeDay {
+	height: 50%;
+	width: 100%;
+}
+#TimeYear {
+	height: 50%;
+	width: 100%;
+}
+#DisplayWindow {
+	height: 100%;
+	width: 48.25px;
+	background-image: url("../image/DisplayWindow1.png");
+	background-position: 50% 50%;
+	background-size: 50% 33%;
+	/*background-color: rgba(0,4,9,0.8);*/
+	display: inline-block;
+}
+#DisplayWindow:hover {
+	background-color: rgba(25,29,33,0.8);
+	background-image: url("../image/DisplayWindow2.png");
+}
+#InputMethod {
+	/*background-color: rgba(0,4,9,0.8);*/
+	background-image: url("../image/InputMethod2.png");
+	background-size: 45% 40%;
+	background-position: 50% 50%;
+	width: 36px;
+	height: 100%;
+	display: inline-block;
+}
+#InputMethod:hover {
+	background-color: rgba(25,29,33,0.8);
+}
+#InputType {
+	/*background-color: rgba(0,4,9,0.8);*/
+	background-image: url("../image/ChineseInput.png");
+	background-size: 65% 37%;
+	background-position: 50% 50%;
+	width: 22px;
+	height: 100%;
+	display: inline-block;
+}
+#InputType:hover {
+	background-color: rgba(25,29,33,0.8);
+}
+#footer-l {
+	position: absolute;
+	left: 0px;
+	height: 40px;
+	width: auto;
+	font-size: 0;
+}
+#footer-r {
+	position: absolute;
+	right: 0px;
+	height: 40px;
+	width: auto;
+	font-size: 0;
+}
