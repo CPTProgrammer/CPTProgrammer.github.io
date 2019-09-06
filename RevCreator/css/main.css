@@ -1,0 +1,77 @@
+@font-face{
+	font-family: "Minecraft";
+	src: url("../font/minecraftia-webfont.ttf");
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #7ecef4;
+}
+.top {
+	position: absolute;
+	top: 0px;
+	background-color: #1f262d;
+	height: 40px;
+	width: 100%;
+	border-bottom: 1px solid #191919;
+}
+.bottom {
+	position: absolute;
+	top: 40px;
+	background-color: #EEEEEE;
+	height: -webkit-calc(100% - 40px);
+	width: 100%;
+}
+.sidebar {
+	width: 180px;
+	height: 100%;
+	background-color: #1f262d;
+	border-right: 1px solid #191919;
+}
+.ico {
+	background-image: url("../img/ico2.png");
+	height: 100%;
+	width: 180px;
+	position: absolute;
+	left: 0px;
+	background-size: 100% 100%;
+}
+.btn {
+	cursor: pointer;
+	-webkit-user-select: none;
+}
+.btn * {
+	cursor: pointer;
+	-webkit-user-select: none;
+	display: inline-block;
+}
+.top-list {
+	width: -webkit-calc(100% - 180px);
+	height: 100%;
+	position: absolute; 
+	left: 180px;
+	font-size: 0px;
+}
+.top-btn {
+	height: 100%;
+	display: inline-block;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	transition-duration: 0.5s;
+	background-color: #1f262d;
+	font-size: 16px;
+}
+.top-btn:hover {
+	background-color: #414c56;
+}
+.face {
+	background-size: 100% 100%;
+	background-image: url("../img/face.png");
+}
+.minecraft-text {
+	font-family: "Minecraft";
+	color: white;
+	font-size: 16px;
+}
