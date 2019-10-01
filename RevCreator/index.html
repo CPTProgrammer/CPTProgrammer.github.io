@@ -3,45 +3,105 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>指令生成器(Command Generator) - RevCreator</title>
+		<!--PLUGIN-->
+		<script> </script>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="plugin/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="plugin/bootstrap-3.3.7-dist/css/bootstrap-theme.css" />
+		<script src="plugin/bootstrap-3.3.7-dist/js/bootstrap.min.js"> </script>
 		<!--CSS-->
 		<link type="text/css" rel="stylesheet" href="css/main.css" />
 		<link type="text/css" rel="stylesheet" href="css/sidebar.css" />
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/content.css" />
+		<!--
+		<link type="text/css" rel="stylesheet" href="css/font-awesome/free.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/font-awesome/free-v4-font-face.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/font-awesome/free-v4-shims.min.css" />-->
 		<!--ICON-->
 		<link rel="shortcut icon" href="favicon.ico" />
 		<!--JavaScript-->
 		<script type="text/javascript" src="plugin/jquery-3.4.1.min.js"> </script>
 		<script type="text/javascript" src="js/sidebar.js"> </script>
+		<!--<script src="js/font-awesome.js" crossorigin="anonymous"> </script>-->
 	</head>
 	<body>
 		<div class="top">
 			<div class="ico"> </div>
 			<div class="top-list">
-				<a class="btn top-btn" href="https://github.com/CPTProgrammer" target="_blank">
+				<a class="btn_ top-btn" href="https://github.com/CPTProgrammer" target="_blank">
 					<div class="face" style="width: 20px; height: 20px; margin: 10px;"> </div>
 					<div class="minecraft-text" style="margin-right: 7.5px; position: relative; top: -13px">CPTProgrammer 的主页</div>
 				</a>
-				<a class="btn top-btn" href="https://afdian.net/@CPTCoder" target="_blank">
+				<a class="btn_ top-btn" href="javascript:void(0)">
 					<div class="face" style="width: 20px; height: 20px; margin: 10px;background-image: url('img/coin-face.png');"> </div>
 					<div class="minecraft-text" style="margin-right: 7.5px; position: relative; top: -13px">赞助</div>
+					<div class="btn-list"> 
+						<div class="btn-list-element">微信支付</div>
+						<div class="btn-list-element btn-list-element-un">支付宝支付</div>
+						<div class="btn-list-element btn-list-element-un" href="https://afdian.net/@CPTCoder" target="_blank">爱发电赞助</div>
+					</div>
 				</a>
 				<!--<div class="btn top-btn" style="position: relative; top: -15.5px;">
 					<i class="fa fa-cog" style="width: 20px; height: 20px; margin: 10px; font-size: 20px; color: white;"> </i>
 					<div class="minecraft-text" style="margin-right: 7.5px; position: relative; top: -13px">设置</div>
 				</div>-->
-				<a class="btn top-btn" style="position: relative; top: -12.5px;">
-					<div class="fa fa-cog" style="width: 20px; height: 20px; margin: 10px; font-size: 20px; color: white;"> </div>
-					<div class="minecraft-text" style="margin-right: 7.5px; position: relative; top: -2px">设置</div>
+				<a class="btn_ top-btn">
+					<div style="width: 20px; height: 20px; margin: 10px; font-size: 20px; color: white;margin-top: 7px"><i class="fa fa-cog"> </i></div>
+					<div class="minecraft-text" style="margin-right: 7.5px; position: relative; top: -1px">设置</div>
 				</a>
 			</div>
 		</div>
 		<div class="bottom">
-			<div class="sidebar accordion" id="accordion">
-				<li>
-					<div class="link"> 
-						
+			<ul class="sidebar accordion" id="accordion">
+				<li class="home-btn">
+					<div class style="   cursor: pointer;
+											    display: block;
+											    padding: 15px 15px 15px 42px;
+											    color: white;
+											    font-size: 14px;
+											    font-weight: 700;
+											    border-bottom: 1px solid #CCC;
+											    position: relative;
+											    -webkit-transition: all 0.4s ease;
+											    -o-transition: all 0.4s ease;
+											    transition: all 0.4s ease;
+											    width: 100%;
+											    height: 30px;
+											    background-color: #3c454f;
+											    user-select: none;
+											    -webkit-user-select: none;
+											    border: none;
+											    border-bottom: black 1px solid;
+											    padding: 6px 0px 0px 6px;
+											    padding-left: 30px;"> 
+						<i class="fa fa-home"> </i>主页
 					</div>
 				</li>
+				<li>
+					<div class="link"> 
+						<i class="fa fa-cog"> </i>单元命令<i class="fa fa-chevron-down"> </i>
+					</div>
+				</li>
+				<li>
+					<div class="link"> 
+						<i class="fa fa-cogs"> </i>多元命令<i class="fa fa-chevron-down"> </i>
+					</div>
+					<ul class="submenu">
+						<li><a href="javascript:windowOpen('RPG')">RPG武器</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="content-left">
+				<iframe frameborder="no" style="width: 100%; height: 100%;">
+					
+				</iframe>
+			</div>
+			<div class="content-drag"><span>&lt;&gt;</span></div>
+			<div class="content-right">
+				
 			</div>
 		</div>
 	</body>

@@ -1,0 +1,41 @@
+.content {
+    position: absolute;
+    top: 40px;
+    left: 180px;
+    width: -webkit-calc(100% - 180px);
+    height: -webkit-calc(100% - 40px);
+}
+.content > div{
+	float: left;
+}
+.content-left {
+	width: -webkit-calc(70% - 10px);
+	height: 100%;
+}
+.content-right {
+	width: -webkit-calc(30% - 10px);
+	height: 100%;
+}
+.content-drag {
+	width: 18px;
+	height: 100%;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background-color: #1f262d;
+	color: white;
+	font-family: "Consolas";
+	cursor: e-resize;
+	-webkit-user-select: none;
+    text-align: center;
+    position: relative;
+}
+.content-drag span {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
