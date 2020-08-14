@@ -178,7 +178,7 @@ function click(i, j){
         }
         if (map[i][j] == -1){
             alert("Loser");
-            window.refresh();
+            location.reload();
             return;
         }
         change(i, j);
@@ -187,7 +187,7 @@ function click(i, j){
     clickCount++;
     if (check()){
         alert("Win!!!!!!!!!!!!!!!!");
-        window.refresh();
+        location.reload();
     }
 }
 function clickAround(i, j){
