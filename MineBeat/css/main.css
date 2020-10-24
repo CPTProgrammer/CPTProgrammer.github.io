@@ -1,0 +1,21 @@
+#project-list {
+    width: calc(20% - 5px);
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #E7FAFF;
+}
+#edit-view{
+    width: calc(80% - 5px);
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #E7FAFF;
+}
+#drag-project-edit{
+    position: absolute;
+    top: 0px;
+    left: calc(20% - 5px);
+}

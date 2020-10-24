@@ -1,0 +1,34 @@
+body{
+    outline: none;
+}
+* {
+    /*outline: 1px solid red;*/
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+    user-select: none;
+    font-family: "Microsoft YaHei";
+}
+.drag {
+    z-index: 100;
+    background-color: #DDF0F6;
+    width: 10px;
+    height: 100%;
+    color: #91B1B9;
+    cursor: e-resize;
+    transition: background-color 0.5s;
+    /*box-shadow: 2px 0px 3px #CCCCCC, -2px 0px 3px white;*/
+}
+.drag:hover{
+    background-color: #CDE0E6;  
+}
+.drag::after{
+    content: "||";
+    display: block;
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    text-align: center;
+    /*text-shadow: 0.5px 0.5px 0.5px #CCCCCC, -0.5px -0.5px 0.5px white;*/
+}
