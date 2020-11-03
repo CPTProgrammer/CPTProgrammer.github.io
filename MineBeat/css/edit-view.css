@@ -17,6 +17,7 @@
     border-right: 1px solid #BFD9E0;
     padding-left: 40px;
     position: relative;
+    transition: 0.3s background-color;
 }
 .edit-head-label img{
     width: 30px;
@@ -71,4 +72,29 @@
 }
 .edit-head-label:hover .edit-head-label-close-btn {
     opacity: 1;
+}
+.edit-head-label:hover{
+    background-color: #DBEFF4;
+}
+
+.edit-head-label-selected {
+    background-color: #E7FAFF;
+}
+.edit-head-label-selected:hover {
+    background-color: #E7FAFF;
+}
+
+#edit-footer{
+    height: 20px;
+    width: 100%;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #6C8B93;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #BFD9E0;
 }

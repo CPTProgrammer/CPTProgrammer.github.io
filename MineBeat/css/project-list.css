@@ -53,3 +53,9 @@
 #project-head > img {
     margin-right: 5px;
 }
+
+#project-list-content {
+    color: #91B1B9;
+    font-size: 30px;
+    font-weight: bold;
+}
