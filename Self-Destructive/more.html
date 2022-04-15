@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>即将自毁网站</title>
+    <link rel="stylesheet" type="text/css" href="./css/font.css"/>
+    <style media="screen">
+        body {
+            background-color: #ECE9E5;
+            color: #635D58;
+            width: 100vw;
+            height: 100vh;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        :root {
+            --defaultv: min(1vw, 1.1vh);
+        }
+        @media screen and (orientation: landscape) {
+            * {
+                user-select: none;
+            }
+            .sentence {
+                font-family: font1;
+                width: 100%;
+                height: auto;
+                font-size: calc(3 * var(--defaultv));
+                text-align: center;
+                line-height: calc(4.5 * var(--defaultv));
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .sentence > span {
+                font-weight: bold;
+                font-size: calc(4 * var(--defaultv));
+                /*position: relative;
+                top: calc(-1 * var(--defaultv));
+                left: calc(-1 * var(--defaultv));*/
+            }
+        }
+        @media screen and (orientation: portrait) {
+            body {
+                text-align: center;
+            }
+            .sentence {
+                font-family: font1;
+                width: auto;
+                height: 100%;
+                font-size: calc(8 * var(--defaultv));
+                text-align: center;
+                line-height: calc(12 * var(--defaultv));
+                display: inline-block;
+                writing-mode: vertical-rl;
+                height: 100%;
+                word-break: keep-all;
+                white-space: break-spaces;
+            }
+            .sentence > span {
+                font-weight: bold;
+                font-size: calc(10 * var(--defaultv));
+            }
+        }
+    </style>
+  </head>
+  <body>
+      <div class="sentence"><span>一时的困难，</span>放大在人生旅程中来看，可能只是寻常；<br />放大视角在人类 几千年历史中来看，更是微不足道。<br />愿你回首望去也能 风轻云淡。</div>
+  </body>
+</html>

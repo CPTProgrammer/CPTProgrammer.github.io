@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>即将自毁网站</title>
+        <link rel="stylesheet" type="text/css" href="./css/font.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/pop-up.css"/>
+        <!--<script type="text/javascript" src="./web.min.js"></script>-->
+        <script type="text/javascript" src="./main-source.js"></script>
+    </head>
+    <body>
+        <div id="background">
+            <div class="larger">
+                <div id="background-fix"></div>
+                <pre class="field" id="intro">
+                    <span>你好，</span>
+                    我是一个网站。
+                    我很快就走了。
+                    不过没关系，
+                    你可以向我发送消息。
+                    如果我二十四小时没有收到消息，
+                    我将永久自毁，
+                    所有内容都将从我的数据库中删除。
+                    不过没关系，
+                    在那之前，
+                    让我知道你在做什么。
+                    我相信，
+                    一定会有人阅读您所写的内容。
+                    你的信息不会泄露，
+                    因此请随意说出您的想法。
+                    自从二〇一九年十二月开始，
+                    是艰难的一段时间。
+                    <div>爱你的，
+                    一个逐渐消失的网站</div>
+                </pre>
+                <div id="timer">距离自毁还有xx时xx分xx秒</div>
+                <!--<textarea class="field" type="text" id="outmsg" readonly="true"></textarea><br>-->
+                <div class="btns">
+                    <button class="btn" type="submit" onclick="getmsg()">
+                        <span class="btn-top"></span>读一条消息<span class="btn-bottom"></span></button>
+                    <button class="btn" type="submit" onclick="openPop(2)">
+                        <span class="btn-top"></span>感到失落？<span class="btn-bottom"></span></button>
+                    <button class="btn" type="submit" onclick="openPop(0)">
+                        <span class="btn-top"></span>发送一条消息<span class="btn-bottom"></span></button>
+                </div>
+                <!--<div id="addhelp"></div>-->
+
+                <!--<textarea class="field" type="text" id="msg">亲爱的网站： </textarea>-->
+            </div>
+            <div id="bottom">
+                <p class="field" id="live">已经存在了xx天xx时xx分xx秒，欢迎把我分享给你的朋友们，以便我能存在的久一点~</p>
+                <p>基于Rust+H5。 待优化：<br />1.界面美化，这个确实不太会。 如果有好的建议，欢迎邮件联系 <br />2.提升访问数据速度</p>
+                <p>欢迎联系讨论，关于这个社会小实验，或者其他什么事<br />jialesz@foxmail.com</p>
+                <p>创意来源于这个网站：<br /><a href="https://www.thiswebsitewillselfdestruct.com">https://www.thiswebsitewillselfdestruct.com</a><br />向原作者致谢。</p>
+            </div>
+        </div>
+        <div id="pop-ups">
+            <div class="pop-up" id="pop-up-send">
+                <div class="pop-up-input pop-up-from">一位心存温暖的陌生人</div>
+                <div class="pop-up-input pop-up-to">此网站</div>
+                <textarea class="pop-up-text pop-up-text-2" id="msg">亲爱的网站：</textarea>
+                <div class="pop-up-btns">
+                    <button class="pop-up-btn btn" type="submit" onclick="addmsg()">
+                        <span class="btn-top"></span>发 送<span class="btn-bottom"></span></button>
+                    <button class="pop-up-btn btn" onclick="closePop(0)">
+                        <span class="btn-top"></span>取 消<span class="btn-bottom"></span></button>
+                </div>
+            </div>
+            <div class="pop-up" id="pop-up-read">
+                <div class="pop-up-input pop-up-from">一位心存温暖的陌生人</div>
+                <div class="pop-up-input pop-up-to">此网站</div>
+                <textarea class="pop-up-text" disabled="disabled" id="outmsg"></textarea>
+                <div class="pop-up-btns">
+                    <button class="pop-up-btn btn" onclick="closePop(1)">
+                        <span class="btn-top"></span>关 闭<span class="btn-bottom"></span></button>
+                </div>
+            </div>
+            <div class="pop-up" id="pop-up-help">
+                <div class="pop-up-input pop-up-from">此网站</div>
+                <div class="pop-up-input pop-up-to">失落的你</div>
+                <pre class="pop-up-text" style="text-align: center;word-break: keep-all;white-space: break-spaces;overflow: auto;">一切还好吗？
+如果您或您认识的人正在苦苦挣扎，那么您并不孤单。
+有许多支持服务可以提供帮助。 <a href="https://www.zhihu.com/question/368761239/answer/1216520108">希望这个链接能帮到您</a>
+分享苏轼的“莫听穿林打叶声，何妨吟啸且徐行。
+竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。”
+或是创世纪“你本是尘土,仍要归于尘土。”
+保持心态，相信没有过不去的坎。
+希望，爱与阳光常与你同在。
+<a href="./more.html">更多</a></pre>
+                <div class="pop-up-btns">
+                    <button class="pop-up-btn btn" onclick="closePop(2)">
+                        <span class="btn-top"></span>关 闭<span class="btn-bottom"></span></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
